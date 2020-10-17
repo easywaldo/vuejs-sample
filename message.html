@@ -2,12 +2,12 @@
 <body>
 <div id="app">
     {{message}}<br/>
-    전화번호 : <input type="text" v-model="phone_number" /><br/>
+    Phone number : <input type="text" v-model="phone_number" /><br/>
     <my-component :value="addressInfo" :address-info.sync="addressInfo">
     </my-component>
     <br/>
-    선택한 주소 1 : <input type="text" v-model="addressInfo.addr" />
-    선택한 주소 2 : <input type="text" v-model="addressInfo.addr2" />
+    Selected Address 1 : <input type="text" v-model="addressInfo.addr" />
+    Selected Address 2 : <input type="text" v-model="addressInfo.addr2" />
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
