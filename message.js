@@ -3,7 +3,7 @@ var bus = new Vue();
 
 Vue.component('my-component', {
     props: ['addressInfo'],
-    template: '<div>사용자 정의 컴포넌트 입니다!<br/> <br/>' + 
+    template: '<div>This is user definition component.. <br/> <br/>' + 
     '<input type="text" id="addr1" ref="input" v-on:input="updateAddr1($event.target.value)"  v-bind:value="addressInfo.addr" /> ' +
     '<input type="text" id="addr2" ref="input" v-on:input="updateAddr2($event.target.value)" v-bind:value="addressInfo.addr2" /> ' +
     '</div>',
@@ -35,12 +35,12 @@ Vue.component('my-component', {
 var mainVue = new Vue({
     el: '#app',
     data: {
-      message: '부모 영역의 뷰 입니다.',
+      message: 'Parent view area',
       addressInfo: {
-          addr: "서울시 광진구 용마산로 1길",
-          addr2: "51",
+          addr: "Seoul Gangnam-Gu",
+          addr2: "Samsung Buidling",
       },
-      phone_number: '010-2075-8317'
+      phone_number: '010-2112-1234'
     },
     methods: {
         getAddressInfo: function(param) {
